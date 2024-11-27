@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api', 
+  baseURL: 'https://movie-mgt-be.vercel.app/api', 
 });
 
 
@@ -19,7 +19,7 @@ API.interceptors.response.use(
     if (error.response && error.response.status === 401) {
       if (error.response.data.message.includes('Token expired')) {
         alert('Session expired. Please log in again.');
-        localStorage.removeItem('authToken');
+        localStorage.removeItem('authToken'); 
         window.location.href = '/login';
       }
     }
