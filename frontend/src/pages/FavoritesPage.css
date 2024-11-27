@@ -1,0 +1,13 @@
+
+.favorites-page-container {
+	padding: 20px;
+	text-align: center;
+}
+
+.favorites-page-title {
+	font-size: 2rem;
+	color: #333;
+	margin-bottom: 1.5rem;
+	text-transform: uppercase;
+}
+

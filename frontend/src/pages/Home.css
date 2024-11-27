@@ -1,0 +1,84 @@
+.home-container {
+	padding: 20px;
+	text-align: center;
+	min-height: 300px;
+}
+
+/* Title styling */
+.home-title {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #DC5F00;
+	margin-bottom: 20px;
+}
+
+/* Search Container Styling */
+.search-container {
+	padding: 15px 20px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+/* Search Input Styling */
+.search-input {
+	width: 100%;
+	max-width: 500px;
+	padding: 10px 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	color: #333;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	outline: none;
+	transition: all 0.3s ease;
+}
+
+/* Search Input Focus Effect */
+.search-input:focus {
+	border-color: #fff;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Placeholder Text Styling */
+.search-input::placeholder {
+	color: #aaa;
+	font-style: italic;
+}
+
+
+/* Pagination buttons container */
+.pagination-container {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+/* Pagination button styling */
+.pagination-button {
+	padding: 10px 20px;
+	background-color: #DC5F00;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+
+.pagination-button:disabled {
+	background-color: #767171;
+	cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+	background-color: #a56632;
+}
+
+.page-number {
+	padding: 10px;
+	color: #DC5F00;
+}
